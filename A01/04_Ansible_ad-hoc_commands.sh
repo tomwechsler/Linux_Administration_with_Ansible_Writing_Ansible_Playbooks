@@ -10,3 +10,29 @@ ansible centos -m file -a "dest=/home/vagrant/file2.txt mode=600"
 #Change the user and group owner
 ansible centos -b -m file -a "dest=/home/vagrant/file2.txt mode=600 owner=root group=root"
 
+#Create a directory
+ansible centos -m file -a "dest=/home/vagrant/newdir mode=755 state=directory"
+
+#Remove the directory
+ansible centos -m file -a "dest=/home/vagrant/newdir mode=755 state=directory state=absent"
+
+#Install the apache web server (present, installed or latest)
+ansible centos -b -m yum -a "name=httpd state=latest"
+
+#(Optional) Deinstall the apache web server
+ansible centos -b -m yum -a "name=httpd state=absent"
+
+#Start a service (run twice first orange second green)
+ansible centos -b -m service -a "name=httpd state=started"
+
+#Restart a service
+ansible centos -b -m service -a "name=httpd state=restarted"
+
+#Reload a service
+ansible centos -b -m service -a "name=httpd state=reloaded"
+
+#Stopp a service
+ansible centos -b -m service -a "name=httpd state=stopped"
+
+#Enable a service (it will ne started at boot)
+ansible centos -b -m service -a "name=httpd enabled=yes"

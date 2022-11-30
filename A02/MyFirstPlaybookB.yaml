@@ -1,0 +1,12 @@
+- name: My Play
+  hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+    - name: FirstTask
+      package:
+        name: tree
+        state: present
+    - name: Print Progress
+      debug:
+        msg: "This is {{ ansible_distribution }}"

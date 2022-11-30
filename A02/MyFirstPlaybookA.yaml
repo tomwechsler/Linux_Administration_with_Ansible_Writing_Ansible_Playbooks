@@ -1,0 +1,8 @@
+- name: My Play
+  hosts: all
+  become: true
+  tasks:
+    - name: FirstTask
+      package:
+        name: tree
+        state: present

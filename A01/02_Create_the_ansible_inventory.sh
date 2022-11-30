@@ -19,3 +19,4 @@ ansible-inventory --list -y
 
 #List inventory with debug module
 ansible all -m debug -a 'var=groups'
+ansible all -m debug -a 'var=groups.keys()'

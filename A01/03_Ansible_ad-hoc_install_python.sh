@@ -3,4 +3,3 @@ ansible centos -b -m raw -a "yum install python3"
 
 #We can test
 ansible centos -b -m ping
-

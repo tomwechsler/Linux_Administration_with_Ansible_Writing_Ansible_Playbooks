@@ -1,3 +1,6 @@
+#If yout get some locale warnings
+export LLC_ALL=c
+
 #Install the epel release
 sudo yum install -y epel-release
 
@@ -7,8 +10,8 @@ sudo yum install -y python3
 #If more then one python version is on the host
 sudo alternatives --set python /usr/bin/python3
 
-#Install Ansible and the docs
-sudo yum install -y ansible ansible-doc
+#Install Ansible
+sudo yum install -y ansible
 
 #Install python arg-completion
 sudo yum install -y python3-argcomplete

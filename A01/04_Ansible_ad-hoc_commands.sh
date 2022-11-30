@@ -36,3 +36,13 @@ ansible centos -b -m service -a "name=httpd state=stopped"
 
 #Enable a service (it will ne started at boot)
 ansible centos -b -m service -a "name=httpd enabled=yes"
+
+#Just a check
+ansible centos -b -m service -a "name=httpd enabled=yes" --check
+ansible centos -b -m service -a "name=httpd enabled=no" --check
+
+#Check with the shell module
+ansible centos -m shell -a "systemctl status httpd"
+
+#Create a user
+ansible centos -b -m user -a 'name=user2 state=present home=/home/user2 shell=/bin/bash'

@@ -17,3 +17,9 @@ https://docs.ansible.com/ansible/latest/reference_appendices/config.html
 <https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html>
 
 <https://galaxy.ansible.com/>
+
+https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html#yaml-syntax
+
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html#playbook-syntax
+
+https://docs.ansible.com/ansible/latest/playbook_guide/index.html

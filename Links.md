@@ -23,3 +23,5 @@ https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html#yam
 https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html#playbook-syntax
 
 https://docs.ansible.com/ansible/latest/playbook_guide/index.html
+
+https://codebeautify.org/yaml-parser-online

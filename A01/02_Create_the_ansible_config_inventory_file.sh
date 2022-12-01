@@ -1,6 +1,8 @@
-#Create the inventory in the ansible hosts file
+#Create the inventory in the ansible configuration and hosts file
 
-vim /etc/ansible/hosts
+vim .ansible
+
+vim inventory
 
 [server]
 centos

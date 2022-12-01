@@ -2,6 +2,8 @@
 
 ## Ansible
 
+https://docs.ansible.com/ansible/latest/reference_appendices/config.html
+
 <https://docs.ansible.com/ansible/latest/index.html>
 
 <https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html#handlers>

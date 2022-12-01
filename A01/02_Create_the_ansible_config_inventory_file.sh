@@ -1,14 +1,36 @@
 #Create the inventory in the ansible configuration and hosts file
+vim .ansible.cfg
 
-vim .ansible
+[defaults]
+inventory = inventory
+
+[privilege_escalation]
+become = true
+
+#exit
+
+ansible-config view
+
+ansible-config dump --only-changed
 
 vim inventory
 
-[server]
+[redhat]
 centos
+[debian]
+ubuntu
+[server:children]
+redhat
 ubuntu
 
 #Exit the editor
+
+#List the inventory
+ansible --list all
+
+ansible --list ungrouped
+
+ansible --list server
 
 #List the inventory
 ansible-inventory --list

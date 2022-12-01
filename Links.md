@@ -24,4 +24,4 @@ https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html#play
 
 https://docs.ansible.com/ansible/latest/playbook_guide/index.html
 
-https://codebeautify.org/yaml-parser-online
+https://jsonformatter.org/yaml-parser

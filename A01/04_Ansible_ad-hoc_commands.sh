@@ -50,3 +50,13 @@ ansible centos -b -m user -a 'name=user2 state=present home=/home/user2 shell=/b
 #Change the primary group
 ansible centos -b -m user -a "name=user2 group=wheel"
 
+#Change back the primary group and add an additional group
+ansible centos -b -m user -a "name=user2 group=user2 groups=wheel"
+
+#Delete the user
+ansible centos -b -m user -a "name=user2 state=absent"
+
+#Add and delete a group
+ansible centos -b -m group -a "name=accounting state=present"
+
+ansible centos -b -m group -a "name=accounting state=absent"

@@ -1,3 +1,30 @@
+#Command module
+- does not use the shell (BASH/SH)
+- Pipe and redirect do not work
+
+#Module Shell
+- Supports pipe and redirect
+- Attention: wrong commands can affect the whole system
+
+#Module raw
+- sends commands via ssh
+- python is not needed
+
+#Protect against shell injection
+MYVAR='myvalue;ls -la /etc/hosts'
+
+echo $MYVAR
+
+ansible centos -m command -a "echo $MYVAR"
+
+ansible centos -m shell -a "echo $MYVAR"
+
+#No text file available because module command does not support redirect
+ansible server -b -m command -a 'echo "test" > /root/test.txt'
+
+#No it works
+ansible server -b -m shell -a 'echo "test" > /root/test.txt'
+
 #Create a file with the file module
 ansible centos -m file -a "path=/home/vagrant/file2.txt state=touch mode=700"
 

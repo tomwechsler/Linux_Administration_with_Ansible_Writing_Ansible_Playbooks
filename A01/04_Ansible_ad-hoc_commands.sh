@@ -46,3 +46,7 @@ ansible centos -m shell -a "systemctl status httpd"
 
 #Create a user
 ansible centos -b -m user -a 'name=user2 state=present home=/home/user2 shell=/bin/bash'
+
+#Change the primary group
+ansible centos -b -m user -a "name=user2 group=wheel"
+

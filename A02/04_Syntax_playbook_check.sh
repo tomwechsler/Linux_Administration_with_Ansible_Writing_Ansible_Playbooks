@@ -23,7 +23,7 @@ vim tree.yaml
 #Exit the editor
 
 #Install the ansible-lint feature
-pip3 install ansible-lint --user
+sudo yum install yamllint
 
 #We can install the ansible-lint Python modules that will check you Playbook against style guidelines.
 ansible-lint -v FirstPlay.yaml

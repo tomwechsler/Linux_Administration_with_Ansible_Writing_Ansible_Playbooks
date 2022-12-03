@@ -1,4 +1,4 @@
-#Create the inventory in the ansible configuration and hosts file
+#Create the inventory and the ansible configuration file
 vim .ansible.cfg
 
 [defaults]
@@ -21,7 +21,7 @@ centos
 ubuntu
 [server:children]
 redhat
-ubuntu
+debian
 
 #Exit the editor
 

@@ -1,3 +1,27 @@
+#Let's create a folder for our ansible "project"
+mkdir -p ~/ansible/simple
+
+#Move in to the new folder
+cd ~/ansible/simple
+
+vim tree.yaml
+
+- name: Install a package
+  hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+    - name: Install tree
+      package:
+        name: tree
+        state: present
+    - name: Print Progress
+      debug:
+        msg: "This is {{ ansible_distribution }}"
+
+
+#Exit the editor
+
 #Install the ansible-lint feature
 pip3 install ansible-lint --user
 

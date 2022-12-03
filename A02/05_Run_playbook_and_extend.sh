@@ -1,4 +1,4 @@
-#Now we have worked with the first variables. Now imagine if we can create the variables based on facts. 
+#Imagine if we can create the variables based on facts. 
 #The following example:
 
 ansible centos -m setup

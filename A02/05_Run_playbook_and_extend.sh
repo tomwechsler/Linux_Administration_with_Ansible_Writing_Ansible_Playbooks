@@ -18,4 +18,4 @@ vim tree.yaml
         state: present
     - name: Print Progress
       debug:
-        msg: "This is {{ ansible_distribution }}"
+        msg: "This is {{ ansible_distribution }}" # {{ ansible_os_family }}

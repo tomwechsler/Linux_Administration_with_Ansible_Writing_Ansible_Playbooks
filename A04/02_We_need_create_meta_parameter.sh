@@ -1,8 +1,9 @@
-mkdir -p ~/ansible/loop; cd ~/ansible/loop
+#We extend the playbook
 
-vim loopdevice.yaml 
+vim loopdevice.yaml
+
 - name: 'Manage Disk File' 
-  hosts: rhel
+  hosts: centos
   become: true
   gather_facts: false
   tasks:

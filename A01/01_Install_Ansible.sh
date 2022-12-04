@@ -1,5 +1,5 @@
 #If yout get some locale warnings
-export LLC_ALL=C
+export LC_ALL="en_US.UTF-8"
 
 #Install the epel release
 sudo yum install -y epel-release

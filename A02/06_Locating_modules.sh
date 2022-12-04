@@ -4,5 +4,6 @@ find /usr/lib -name 'debug.py'
 
 find /usr/lib -name 'package.py'
 
+ansible-doc -l 
 
-
+ansible-doc user

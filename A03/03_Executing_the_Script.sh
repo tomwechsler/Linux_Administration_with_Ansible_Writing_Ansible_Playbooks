@@ -2,11 +2,11 @@ chmod u+x shell.sh
 
 ./shell.sh
 
-scp shell.sh tux@192.168.33.12: 
-scp shell.sh tux@192.168.33.13:
+scp shell.sh vagrant@centos: 
+scp shell.sh vagrant@ubuntu:
 
-ssh tux@192.168.33.12 -C '~/shell.sh'
-ssh tux@192.168.33.13 -C '~/shell.sh'
+ssh vagrant@centos -C '~/shell.sh'
+ssh vagrant@ubuntu -C '~/shell.sh'
 
 
 

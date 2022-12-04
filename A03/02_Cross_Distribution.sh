@@ -1,7 +1,12 @@
+#Extend the scrip
+
+vim shell.sh
+
 #!/bin/bash
+sudo timedatectl set-timezone 'Europe/Zurich'
 if [ -f '/usr/bin/apt' ]; then 
-  sudo apt update -y
-  sudo apt install -y tree 
+  sudo apt-get update -y
+  sudo apt-get install -y tree 
 else 
   sudo yum install -y tree 
 fi

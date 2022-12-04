@@ -11,19 +11,19 @@ vim temp.yaml
   hosts: server
   become: yes
   tasks:
-   - name: install apache2
+   - name: 'install apache2'
      apt: name=apache2 update_cache=yes state=latest
 	   when: ansible_os_family == "Debian"
 
-   - name: install httpd
+   - name: 'install httpd'
      yum: name=httpd state=latest
 	   when: ansible_os_family == "RedHat"
 
-- name: templates
+- name: 'templates'
   vars:
    file_version: 1.0
   tasks:
-   - name: install index
+   - name: 'install index'
      template:
 	    src: index.html.j2
 	    dest: /var/www/html/index.html

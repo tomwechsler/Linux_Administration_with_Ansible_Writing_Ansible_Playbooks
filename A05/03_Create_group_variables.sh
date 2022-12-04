@@ -9,7 +9,7 @@ mkdir ~/group_vars
 
 vim ~/group_vars/redhat 
 apache_pkg: httpd 
-apache_srv: httpd 
+apache_svc: httpd 
 
 vim ~/group_vars/debian 
 apache_pkg: apache2 

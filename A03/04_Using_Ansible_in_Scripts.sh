@@ -1,8 +1,11 @@
+#Create a script with ansible ad-hoc commands
+
+vim shell2.sh
+
 #!/bin/bash
-cd ~/home/vagrant/ 
+cd ~ 
 ansible -b all -m package -a 'name=tree state=present'
-ansible -b all -m file -a \ 
-'path=/etc/localtime state=link src=/usr/share/zoneinfo/Europe/London force=true' 
+ansible -b all -m file -a 'path=/etc/localtime state=link src=/usr/share/zoneinfo/Europe/Zurich force=true' 
 
 
 

@@ -1,5 +1,10 @@
-#!/bin/sh 
+#Create a new script
+
+vim myscript.sh
+
+#!/bin/bash 
 echo "Hello World!" 
+cat /etc/hosts
 
 ansible all -m script -a "/home/vagrant/myscript.sh"
 

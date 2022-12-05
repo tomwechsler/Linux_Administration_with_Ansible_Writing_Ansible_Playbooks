@@ -1,3 +1,6 @@
+#Move back to the project
+cd ansible/apache
+
 #Extend the playbook
 vim apache.yaml
 

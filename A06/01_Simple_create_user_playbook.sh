@@ -1,6 +1,24 @@
+#Expand the inventory with our control host.
+vim inventory
+
+[redhat]
+centos
+ctrlnode
+[debian]
+ubuntu
+[server:children]
+redhat
+debian
+
+#Make sure to edit also the /etc/hosts file
+vim /etc/hosts
+
+#We create a new project directory
+mkdir -p ansible/user
+
 #Create a new user
 
-vim simpleuser.yaml
+vim user.yaml
 
 
 - name: 'Manage User Account' 

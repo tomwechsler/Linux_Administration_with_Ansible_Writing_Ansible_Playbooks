@@ -10,7 +10,23 @@ vim backup.yaml
     dest: "/tmp/etc-{{ ansible_hostname }}.tgz"
 
 #Now the playbook
+vim archive.yaml
 
+- name: 'Backup and schedule backups'
+  hosts: 'all'
+  become: true
+  gather_facts: true
+  tasks:
+  - include_tasks: backup.yaml
+
+
+#Now let the playbook run
+ansible-playbook archive.yaml
+
+#Did it work
+ls /tmp/
+
+#We cloud also import the task in our playbook: import_tasks (then appears like a normal task)
 
 
 

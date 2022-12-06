@@ -79,5 +79,5 @@ vim vdo.yaml
 #Lets run the playbook
 ansible-playbook vdo.yaml
 
-#Did it work?
+#Did it work (on the remote system)?
 mount -t XFS

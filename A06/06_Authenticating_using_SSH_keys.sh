@@ -31,6 +31,9 @@ vim user.yaml
       when: user_create == 'no'
 
 
+#Start the playbook
+ansible-playbook user.yaml -e user_create=yes
+
 #Lets check
 ssh -i ~/.ssh/id_ecdsa ansible@centos
 

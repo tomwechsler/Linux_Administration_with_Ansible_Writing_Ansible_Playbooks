@@ -27,3 +27,7 @@
 <https://docs.ansible.com/ansible/latest/playbook_guide/index.html>
 
 <https://jsonformatter.org/yaml-parser>
+
+## Red Hat
+
+<https://www.redhat.com/de/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux-8>

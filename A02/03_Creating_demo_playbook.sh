@@ -17,5 +17,3 @@ vim FirstPlay.yaml
 
 
 
-Using Playbooks, we can reference the same configuration and inventory used with ad-hoc
-commands. A Playbook will contain at least one Play and one of more Tasks within the Play.

@@ -1,5 +1,5 @@
 # Linux Administration with Ansible: Writing Ansible Playbooks!
-Manage and administer a Linux infrastructure with Ansible (EX294)!
+Manage, automate and administer a Linux infrastructure with Ansible (EX294)!
 
 ## Content of the sections
 

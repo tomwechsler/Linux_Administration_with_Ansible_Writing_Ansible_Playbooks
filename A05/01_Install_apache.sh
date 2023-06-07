@@ -14,6 +14,3 @@ vim apache.yaml
         state: 'present' 
 
 
-Installing Apache will work without issues across the RHEL and CentOS systems but, hard
-coding the package to httpd will fail on the Ubuntu system as it uses the package name
-apache2.

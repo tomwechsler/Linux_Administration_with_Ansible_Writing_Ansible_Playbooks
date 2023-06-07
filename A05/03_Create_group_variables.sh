@@ -17,5 +17,3 @@ apache_svc: apache2
 
 
 
-The inventory file we have created includes the RedHat group which includes the centos host. 
-The debian group is for the single ubuntu system.

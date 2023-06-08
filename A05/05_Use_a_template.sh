@@ -6,31 +6,30 @@
 vim temp.yaml
 
 ---
-
+---
 - name: 'conditionals'
   hosts: server
-  become: yes
+  become: true
   gather_facts: true
   tasks:
-   - name: 'install apache2'
-     apt: name=apache2 update_cache=yes state=latest
-     when: ansible_os_family == "Debian"
-   
-   - name: 'install httpd'
-     yum: name=httpd state=latest
-     when: ansible_os_family == "RedHat"
+    - name: 'install apache2'
+      apt: name=apache2 update_cache=yes state=latest
+      when: ansible_os_family == "Debian"
+    - name: 'install httpd'
+      yum: name=httpd state=latest
+      when: ansible_os_family == "RedHat"
 - name: 'templates'
   hosts: server
-  become: yes
+  become: true
   gather_facts: true                                                                                              
   vars:
     file_version: 1.0
-    tasks:
-- name: 'install index'
-     template:
-      src: index.html.j2
-      dest: /var/www/html/index.html
-      mode: 0777
+  tasks:
+    - name: 'install index'
+      template:
+        src: index.html.j2
+        dest: /var/www/html/index.html
+        mode: 0777
 
 #Now we create the template.
 

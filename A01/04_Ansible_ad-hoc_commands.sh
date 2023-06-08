@@ -23,7 +23,7 @@ ansible centos -m shell -a "echo $MYVAR"
 ansible server  -m command -a 'echo "test" > /root/test.txt'
 
 #No it works
-ansible server  -m shell -a 'echo "test" > /root/test.txt'
+ansible server -m shell -a 'echo "test" > /root/test.txt'
 
 #Create a file with the file module
 ansible almahost -m file -a "path=/home/vagrant/file2.txt state=touch mode=700"

@@ -10,10 +10,10 @@ vim FirstPlay.yaml
   hosts: all 
   become: true 
   tasks: 
-    -name: My First Task 
-     package: 
-       name: tree 
-       state: present 
+    - name: My First Task 
+      package: 
+        name: tree 
+        state: present 
 
 
 

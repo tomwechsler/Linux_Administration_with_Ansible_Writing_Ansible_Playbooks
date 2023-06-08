@@ -4,7 +4,7 @@ mkdir -p ~/ansible/apache; cd ~/ansible/apache
 vim apache.yaml
 
 - name: 'Manage Apache Deployment' 
-  hosts: centos 
+  hosts: redhat 
   become: true 
   gather_facts: false 
   tasks: 
@@ -12,5 +12,8 @@ vim apache.yaml
       package: 
         name: 'httpd' 
         state: 'present' 
-
-
+    - name: 'Start and enable web server' 
+      service: 
+        name: 'httpd' 
+        state: 'started' 
+        enabled: true
